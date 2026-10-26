@@ -21,58 +21,8 @@
         .btn-link { display: block; background: #c59b27; color: white; text-align: center; padding: 10px; margin: 10px 0; border-radius: 5px; text-decoration: none; font-weight: bold; }
         .btn-link:hover { background: #b0871f; }
         
-        /* Estilo fiel al Membrete Institucional del DGSC */
-        .dgsc-membrete {
-            display: flex;
-            align-items: center;
-            background: #fff;
-            border: 1px solid #c59b27;
-            border-radius: 6px;
-            padding: 8px;
-            margin: 10px 0 15px 0;
-            box-shadow: 0 2px 4px rgba(197, 155, 39, 0.1);
-        }
-        .dgsc-logo-box {
-            border: 1.5px solid #c59b27;
-            padding: 4px;
-            margin-right: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 42px;
-            height: 42px;
-            flex-shrink: 0;
-            background: #fffdf5;
-        }
-        .dgsc-logo-box svg {
-            width: 32px;
-            height: 32px;
-            fill: #c59b27;
-        }
-        .dgsc-texto-box {
-            font-family: "Times New Roman", Times, serif;
-            line-height: 1.1;
-        }
-        .dgsc-texto-box .t1 {
-            font-size: 14px;
-            font-weight: bold;
-            color: #c59b27;
-            letter-spacing: 0.5px;
-        }
-        .dgsc-texto-box .t2 {
-            font-size: 12px;
-            font-weight: bold;
-            color: #c59b27;
-        }
-        .dgsc-texto-box .t3 {
-            font-size: 8.5px;
-            color: #c59b27;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-top: 2px;
-            border-top: 1px solid #c59b27;
-            padding-top: 1px;
-        }
+        .logo-section { text-align: center; margin-bottom: 15px; }
+        .logo-section img { max-width: 160px; height: auto; }
     </style>
 </head>
 <body>
@@ -81,33 +31,11 @@
     <h2>Dirección General de Servicio Civil</h2>
     <p class="sub">Carrera Docente</p>
 
-    <!-- Componente de Membrete reutilizable -->
-    <%def name="render_membrete()">
-    <div class="dgsc-membrete">
-        <div class="dgsc-logo-box">
-            <!-- Icono estilizado del mapa de Costa Rica institucional -->
-            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-        </div>
-        <div class="dgsc-texto-box">
-            <div class="t1">DIRECCIÓN GENERAL</div>
-            <div class="t2">DE SERVICIO CIVIL</div>
-            <div class="t3">Gobierno de Costa Rica</div>
-        </div>
-    </div>
-    </%def>
-
     <!-- Cuadro 1 -->
     <button class="accordion">1. Consultas u orientacion Título II</button>
     <div class="panel">
-        <div class="dgsc-membrete">
-            <div class="dgsc-logo-box">
-                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            </div>
-            <div class="dgsc-texto-box">
-                <div class="t1">DIRECCIÓN GENERAL</div>
-                <div class="t2">DE SERVICIO CIVIL</div>
-                <div class="t3">Gobierno de Costa Rica</div>
-            </div>
+        <div class="logo-section">
+            <img src="https://www.dgsc.go.cr/PublishingImages/logo_dgsc.png" alt="Logo DGSC" onerror="this.style.display='none'">
         </div>
         <p><b>Procedimiento para tramitar una consulta:</b><br>• Redacte y adjunte el oficio preparado, o escriba directamente en el correo indicando su planteamiento o solicitud de orientación.<br>• Adjunte una imagen o captura de la cédula de identidad por ambos lados.</p>
         <a href="mailto:cdocente@dgsc.go.cr" class="btn-link">Enviar correo: cdocente@dgsc.go.cr</a>
@@ -116,15 +44,8 @@
     <!-- Cuadro 2 -->
     <button class="accordion">2. Consultas de Atinencias y Grupo Profesional (Título II)</button>
     <div class="panel">
-        <div class="dgsc-membrete">
-            <div class="dgsc-logo-box">
-                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            </div>
-            <div class="dgsc-texto-box">
-                <div class="t1">DIRECCIÓN GENERAL</div>
-                <div class="t2">DE SERVICIO CIVIL</div>
-                <div class="t3">Gobierno de Costa Rica</div>
-            </div>
+        <div class="logo-section">
+            <img src="https://www.dgsc.go.cr/PublishingImages/logo_dgsc.png" alt="Logo DGSC" onerror="this.style.display='none'">
         </div>
         <p>Siga estos pasos:<br>1. Ingrese a la página web: www.dgsc.go.cr<br>2. Diríjase a la sección de Manuales de Clases y Especialidades.<br>3. Seleccione Manual de Puestos Docente (Título II).<br>4. Ingrese a la carpeta Especialidades Docentes y seleccione la de su interés.</p>
         <a href="https://www.dgsc.go.cr/ts_clase_docente/dgsc_servicios_docente.html" target="_blank" class="btn-link">Ir al Buscador de Servicios Docentes</a>
@@ -133,15 +54,8 @@
     <!-- Cuadro 3 -->
     <button class="accordion">3. Consultas de las Clases Docentes (Título II)</button>
     <div class="panel">
-        <div class="dgsc-membrete">
-            <div class="dgsc-logo-box">
-                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            </div>
-            <div class="dgsc-texto-box">
-                <div class="t1">DIRECCIÓN GENERAL</div>
-                <div class="t2">DE SERVICIO CIVIL</div>
-                <div class="t3">Gobierno de Costa Rica</div>
-            </div>
+        <div class="logo-section">
+            <img src="https://www.dgsc.go.cr/PublishingImages/logo_dgsc.png" alt="Logo DGSC" onerror="this.style.display='none'">
         </div>
         <p>Siga estos pasos:<br>1. Ingrese a la página web: www.dgsc.go.cr<br>2. Diríjase a la sección Manual de Clases y Especialidades.<br>3. Seleccione Clases Docentes y busque la clase de puesto docente de su interés.</p>
         <a href="https://www.dgsc.go.cr/ts_clase_docente/dgsc_servicios_docente.html" target="_blank" class="btn-link">Ir al Manual de Clases Docentes</a>
