@@ -10,16 +10,15 @@
         h2 { text-align: center; color: #1a365d; font-size: 20px; margin-bottom: 5px; }
         p.sub { text-align: center; color: #c59b27; font-weight: bold; font-size: 14px; margin-bottom: 20px; }
         
-        /* Estilo del Acordeón Desplegable */
-        .accordion { background-color: #1a365d; color: white; cursor: pointer; padding: 15px; width: 100%; border: none; text-align: left; outline: none; font-size: 15px; font-weight: bold; border-radius: 8px; margin-top: 10px; transition: 0.3s; display: flex; justify-content: space-between; align-items: center; }
+        .accordion { background-color: #1a365d; color: white; cursor: pointer; padding: 15px; width: 100%; border: none; text-align: left; outline: none; font-size: 14px; font-weight: bold; border-radius: 8px; margin-top: 10px; transition: 0.3s; display: flex; justify-content: space-between; align-items: center; }
         .accordion:hover { background-color: #2a4a7f; }
         .accordion::after { content: '+'; font-size: 18px; font-weight: bold; }
         .active::after { content: '-'; }
         
-        .panel { padding: 0 15px; background-color: #f9fafb; max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; border-radius: 0 0 8px 8px; font-size: 14px; line-height: 1.5; }
+        .panel { padding: 0 15px; background-color: #f9fafb; max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; border-radius: 0 0 8px 8px; font-size: 13px; line-height: 1.5; }
         .panel p { padding: 10px 0; }
         
-        .btn-link { display: block; background: #c59b27; color: white; text-align: center; padding: 10px; margin-top: 10px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+        .btn-link { display: block; background: #c59b27; color: white; text-align: center; padding: 10px; margin: 10px 0; border-radius: 5px; text-decoration: none; font-weight: bold; }
         .btn-link:hover { background: #b0871f; }
     </style>
 </head>
@@ -29,33 +28,46 @@
     <h2>Dirección General de Servicio Civil</h2>
     <p class="sub">Carrera Docente 🇨🇷</p>
 
-    <!-- Desplegable 1 -->
-    <button class="accordion">📋 Procedimiento para Consultas</button>
+    <!-- Cuadro 1 -->
+    <button class="accordion">1. Procedimiento para tramitar una consulta</button>
     <div class="panel">
-        <p>• Redacte y adjunte el oficio preparado, o escriba directamente en el correo indicando su solicitud[cite: 1].<br>• Adjunte una imagen o captura de la cédula de identidad por ambos lados[cite: 1].</p>
-        <a href="mailto:cdocente@dgsc.go.cr" class="btn-link">Enviar Correo a cdocente@dgsc.go.cr[cite: 1]</a>
+        <p>• Redacte y adjunte el oficio preparado, o escriba directamente en el correo indicando su planteamiento o solicitud de orientación.<br>• Adjunte una imagen o captura de la cédula de identidad por ambos lados.</p>
+        <a href="mailto:cdocente@dgsc.go.cr" class="btn-link">Enviar correo: cdocente@dgsc.go.cr</a>
     </div>
 
-    <!-- Desplegable 2 -->
-    <button class="accordion">📚 Consultas de Atinencias y Clases</button>
+    <!-- Cuadro 2 -->
+    <button class="accordion">2. Consultas de Atinencias y Grupo Profesional (Título II)</button>
     <div class="panel">
-        <p>1. Ingrese a <b>www.dgsc.go.cr</b>[cite: 1]<br>2. Diríjase a <b>Manuales de Clases y Especialidades</b>[cite: 1].<br>3. Seleccione el Manual de Puestos Docente o Clases Docentes de su interés[cite: 1].</p>
-        <a href="https://www.dgsc.go.cr/ts_clase_docente/dgsc_servicios_docente.html" target="_blank" class="btn-link">Ir al Buscador Docente[cite: 1]</a>
+        <p>Siga estos pasos:<br>1. Ingrese a la página web: www.dgsc.go.cr<br>2. Diríjase a la sección de Manuales de Clases y Especialidades.<br>3. Seleccione Manual de Puestos Docente (Título II).<br>4. Ingrese a la carpeta Especialidades Docentes y seleccione la de su interés.</p>
+        <a href="https://www.dgsc.go.cr/ts_clase_docente/dgsc_servicios_docente.html" target="_blank" class="btn-link">Ir al Buscador de Servicios Docentes</a>
     </div>
 
-    <!-- Desplegable 3 -->
-    <button class="accordion">🔍 Vacantes y Puestos Disponibles (MEP)</button>
+    <!-- Cuadro 3 -->
+    <button class="accordion">3. Consultas de las Clases Docentes (Título II)</button>
     <div class="panel">
-        <p>Consulte puestos, lecciones disponibles y plataformas de atención de la Dirección de Gestión del Talento Humano del MEP[cite: 1].</p>
-        <a href="https://dgth.mep.go.cr/puestos-y-lecciones-disponibles/" target="_blank" class="btn-link">Ver Vacantes y Lecciones[cite: 1]</a>
-        <a href="https://dgth.mep.go.cr/contactanos2/" target="_blank" class="btn-link">Plataforma de Contacto MEP[cite: 1]</a>
+        <p>Siga estos pasos:<br>1. Ingrese a la página web: www.dgsc.go.cr<br>2. Diríjase a la sección Manual de Clases y Especialidades.<br>3. Seleccione Clases Docentes y busque la clase de puesto docente de su interés.</p>
+        <a href="https://www.dgsc.go.cr/ts_clase_docente/dgsc_servicios_docente.html" target="_blank" class="btn-link">Ir al Manual de Clases Docentes</a>
     </div>
 
-    <!-- Desplegable 4 -->
-    <button class="accordion">📍 Oficinas Regionales (Sustituciones)</button>
+    <!-- Cuadro 4 -->
+    <button class="accordion">4. Consultas de Vacantes disponibles - MEP</button>
     <div class="panel">
-        <p>Consulte el directorio de las 27 Oficinas de Direcciones Regionales para sustituciones menores a 35 días (incapacidades o permisos cortos)[cite: 1].</p>
-        <a href="https://www.mep.go.cr/oficinas" target="_blank" class="btn-link">Ver Directorio de Oficinas[cite: 1]</a>
+        <p>Para consultar los puestos y lecciones disponibles publicados por el Ministerio de Educación Pública (MEP), acceda al siguiente enlace:</p>
+        <a href="https://dgth.mep.go.cr/puestos-y-lecciones-disponibles/" target="_blank" class="btn-link">Ver Puestos y Lecciones Disponibles</a>
+    </div>
+
+    <!-- Cuadro 5 -->
+    <button class="accordion">5. Plataforma de Atención y Solicitudes - MEP</button>
+    <div class="panel">
+        <p>La Dirección de Gestión del Talento Humano del MEP cuenta con una plataforma para la atención de solicitudes, consultas, trámites y correspondencia:</p>
+        <a href="https://dgth.mep.go.cr/contactanos2/" target="_blank" class="btn-link">Ir a la Plataforma Contáctanos MEP</a>
+    </div>
+
+    <!-- Cuadro 6 -->
+    <button class="accordion">6. Directorio de Oficinas Regionales - MEP</button>
+    <div class="panel">
+        <p>Consulte el directorio de las 27 Oficinas de las Direcciones Regionales de Educación (para sustituciones menores a 35 días, bases de datos o listados por regiones para cubrir periodos cortos como incapacidades o licencias):</p>
+        <a href="https://www.mep.go.cr/oficinas" target="_blank" class="btn-link">Ver Directorio de Oficinas Regionales</a>
     </div>
 
 </div>
