@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brochure Digital - Carrera Docente (DGSC)</title>
+    <style>
+        :root {
+            --navy-primary: #1a365d;
+            --navy-hover: #2a4a7f;
+            --gold-accent: #c59b27;
+            --gold-hover: #b0871f;
+            --bg-light: #f4f6f9;
+            --card-bg: #ffffff;
+            --text-dark: #2d3748;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-light);
+            margin: 0;
+            padding: 20px 10px;
+            color: var(--text-dark);
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 25px 20px;
+            border-radius: 14px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+        }
+
+        /* Encabezado Principal */
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #edf2f7;
+        }
+
+        .header img {
+            max-width: 170px;
+            height: auto;
+            margin-bottom: 12px;
+        }
+
+        .header h1 {
+            color: var(--navy-primary);
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 0 4px 0;
+        }
+
+        .header h2 {
+            color: var(--gold-accent);
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .sub-tag {
+            display: inline-block;
+            background: #fffdf5;
+            color: var(--gold-accent);
+            border: 1px solid var(--gold-accent);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        /* Sección de Propósito */
+        .proposito-card {
+            background-color: #f7fafc;
+            border-left: 4px solid var(--navy-primary);
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 25px;
+        }
+
+        .proposito-card h3 {
+            color: var(--navy-primary);
+            margin: 0 0 8px 0;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .proposito-card p {
+            margin: 0;
+            font-size: 13px;
+            line-height: 1.5;
+            color: #4a5568;
+        }
+
+        /* Productos Principales */
+        .section-title {
+            color: var(--navy-primary);
+            font-size: 16px;
+            font-weight: bold;
+            margin: 25px 0 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 2px solid var(--gold-accent);
+            padding-bottom: 6px;
+        }
+
+        .productos-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .producto-item {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 14px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .producto-item strong {
+            color: var(--navy-primary);
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        .producto-item p {
+            margin: 0;
+            font-size: 12.5px;
+            color: #4a5568;
+            line-height: 1.45;
+        }
+
+        /* Footer de Contacto Fijo */
+        .contact-footer {
+            background-color: #f8fafc;
+            border: 1px solid #cbd5e0;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .contact-footer h3 {
+            color: var(--navy-primary);
+            font-size: 15px;
+            margin-top: 0;
+            margin-bottom: 12px;
+            border-bottom: 2px solid var(--gold-accent);
+            padding-bottom: 6px;
+        }
+
+        .contact-footer p {
+            margin: 8px 0;
+            color: var(--text-dark);
+        }
+
+        .contact-footer a {
+            color: var(--navy-primary);
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Encabezado Principal con Logo Arriba y mismo tamaño de texto -->
+    <div class="header">
+        <img src="logo.png" alt="Dirección General de Servicio Civil">
+        <h2>Dirección General de Servicio Civil</h2>
+        <h2>Carrera Docente</h2>
+        <span class="sub-tag">Título II - Estatuto de Servicio Civil</span>
+    </div>
+
+    <!-- Sección del Propósito Institucional -->
+    <div class="proposito-card">
+        <h3>Propósito Institucional</h3>
+        <p>Garantizar la aplicación y funcionalidad de los principios y normas de la Ley de Carrera Docente, fomentando y consolidando la estructura corporativa (con el MEP como socio estratégico) en la atención y resolución de los asuntos relacionados con la administración de los recursos humanos docentes, técnico-docentes y administrativo-docentes, en contribución al logro de un mayor grado de eficiencia en la Educación Pública.</p>
+    </div>
+
+    <!-- Sección de Principales Productos -->
+    <div class="section-title">📌 Principales Productos y Servicios</div>
+    <div class="productos-grid">
+        <div class="producto-item">
+            <strong>📘 Normativa y Manuales:</strong>
+            <p>Asesoría técnica en materia del Título II, organización del trabajo, gestión del empleo, modelo de evaluación de desempeño y actualización de Manuales de clases de puestos y especialidades docentes (incluye las atinencias).</p>
+        </div>
+        <div class="producto-item">
+            <strong>📋 Atención y Validación:</strong>
+            <p>Resolución de consultas y orientación de usuarios, emisión de dictámenes, visados de estudios de vida y costumbres.</p>
+        </div>
+        <div class="producto-item">
+            <strong>👥 Gestión de Personal:</strong>
+            <p>Mantenimiento del Registro de inelegibles, tramitación de postulación por medio de nóminas (técnico-docentes y administrativo-docentes) y propuesta docente, pedimentos de personal, reporte estadístico de interinos por inopia de personal y reclutamiento insuficiente.</p>
+        </div>
+        <div class="producto-item">
+            <strong>💻 Soporte Tecnológico:</strong>
+            <p>Configuración, actualización y parametrización de sistemas informáticos (SAGETH, Integra II, CRTEZA).</p>
+        </div>
+    </div>
+
+    <!-- Detalles de Contacto Institucional -->
+    <div class="contact-footer">
+        <h3>Detalles de Contacto y de Atención de Carrera Docente</h3>
+        <p><b>📍 Ubicación:</b><br>San José, Sabana Norte, Complejo ICE, Edificio B, Segundo Piso, 100 metros al norte del Hotel Palma Real.</p>
+        <p><b>⏰ Horario de atención:</b><br>7:00 am a 3:00 pm</p>
+        <p><b>🌐 Sitio Web:</b><br><a href="https://www.dgsc.go.cr" target="_blank">www.dgsc.go.cr</a></p>
+        <p><b>✉️ Correo electrónico:</b><br><a href="mailto:cdocente@dgsc.go.cr">cdocente@dgsc.go.cr</a></p>
+        <p><b>📞 Teléfonos:</b><br>2586-8434, 2586-8372, 2586-8373, 2586-8484 y 2586-8491.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
